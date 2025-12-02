@@ -1,11 +1,13 @@
 // import Versions from './components/Versions'
 // import electronLogo from './assets/electron.svg'
 
+import Canvas from "@renderer/components/Canvas"
+
 function App(): React.JSX.Element {
   // const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
 
   return (
-    <>
+    <div className="w-screen h-screen">
       {/* <img alt="logo" className="logo" src={electronLogo} />
       <div className="creator">Powered by electron-vite</div>
       <div className="text">
@@ -28,8 +30,9 @@ function App(): React.JSX.Element {
         </div>
       </div>
       <Versions></Versions> */}
-      <h1 className="text-3xl font-bold underline text-red-500">Hello world!</h1>
-    </>
+      <h1 className="text-sm font-bold underline text-red-500">Hello world!</h1>
+      <Canvas />
+    </div>
   )
 }
 
